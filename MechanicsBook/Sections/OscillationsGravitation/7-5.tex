@@ -1,0 +1,22 @@
+\
+\
+\
+\begin{tikzpicture}
+\draw (0,0) circle (0.00001cm);
+\filldraw (6,0) circle (0.05cm);
+\draw (7,-2) -- (6,-0);
+\draw[->] (8,-4) -- (7,-2);
+\filldraw (8,-4) circle (0.5cm);
+\draw[->] (8,-4.5) -- (8,-5.5);
+\draw (8,-5.5) node[anchor=west] {$\vec{F_g}$};
+\draw (7,-2) node[anchor=west] {$\vec{F_T}$};
+\draw[dashed] (7.625,-4.375) arc (-45:-135:3cm);
+\end{tikzpicture}
+\begin{center}
+(Figure 7.5.1)
+\end{center}
+\ 
+\
+Now, we will talk about pendulums, one of the few other examples of simple harmonic oscillation that we will see in elementary physics. We will consider a pendulum with length $L$ of negligible mass with a small ball of mass $M$ attached to its bottom. We take the size of the ball to be negligible compared to the length of the pendulum. We assume that the pendulum is fixed at its top. 
+The pendulum moves along a curve where its velocity will always be perpendicular to the string. This means that the tangential velocity of the ball is perpendicular to the string, and therefore the tension force. Therefore, when we are considering moving in the tangential direction, we do not have to worry about the tension force. We can not think about this as a normal centripetal acceleration problem with the tensional force as the centripetal force because the velocity of the ball is constantly changing due to gravity. So, now let us think about the forces acting on the ball in the tangential direction. We see that the only force in this direction is the gravitational force. The gravitational force in this direction is equal to $$mg\sin\left(\theta \right)$$ We will take the approximation for small angles that $\sin\left(\theta \right)$ is simply equal to $\theta$. We take this approximation simply because it is too difficult to solve the differential equation that results from this expression if we do not. This approximation is so common that it gets the name the small angle approximation. If this doesn't seem obvious to you, I recommend you to work this out on your own because situations like this occur very frequently. We can now write that $$-mg\theta=mat$$ We added the - sign because the force is a restoring force(in fact it is a linear restoring force in $\theta$). We can also say that $L\alpha=at$ because the pendulum is a rigid body that is undergoing angular acceleration. We note that $\alpha$ is the second derivative of theta. We can cancel the $m$’s and move the $g\theta$ term to the other side followed by dividing by $L$ to find that \begin{equation}\alpha+\theta \left(\frac{g}{L}\right) =0\end{equation} This is exactly what we had in the normal situation for harmonic oscillation. We can take $\omega^2$ to be $\frac{g}{L}$. Using this we can determine the period of oscillation for the pendulum in addition to the frequency of the system. The period is equal to $\frac{2\pi}{\omega}$ and therefore $$2\pi \sqrt{\frac{L}{g}}$$ This makes sense. We would imagine a longer string would take longer to make a complete oscillation, and we would imagine if $g$ was greater, and the force of gravity was, therefore, greater, that the period of oscillation would decrease. Using what he has done so far, I leave it to you as an exercise to calculate the frequency of the pendulum and for more of a challenge, calculate the frequency and period where we take an arbitrary object to the pendulum. You will have to use torque and the center of mass in addition to the small-angle approximation to find your answer. However, in theory, it is not that difficult to do. Hopefully, you have seen through this example how powerful an approximation can truly be. 
+\pagebreak

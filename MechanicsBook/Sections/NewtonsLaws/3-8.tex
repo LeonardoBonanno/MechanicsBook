@@ -1,0 +1,22 @@
+One of the most classic things people learn when they take introductory physics is the difference between mass and weight. Unfortunately, the way that the concept is taught is often in a rather silly way that hinges on diction rather than having any real physical insights. The idea of what mass is is fairly simple. In physics, mass is described by the amount of matter a certain thing has. It is important to understand that of the fundamental forces of physics(you do not have to know these), gravity is the only one that relies on mass to determine its strength. So in a physical sense, mass is measured by measuring the force that acts on a body in a known gravitational field. This is a circular definition, but it can help us better understand mass when compared to trying to figure out what exactly “matter” is. Now that we have a better grasp of what exactly mass is, we can give a proper definition of weight. In our popular use, we use weight as the same as mass, and that is correct in popular parlance. However, physicists define weight differently. Physicists define weight as the product of the acceleration of free fall times the mass of the object. This is equal to the gravitational force acting on an object and is denoted as either $$W$$ or $$F_G$$ This may seem odd because it gives us a definition of weight that is in Newtons rather than pounds or kilograms. This definition of weight is one common definition, but, on certain problems and  physics books, the weight of an object is the weight that you will get if you put an object on a scale while it undergoes some force. The value that you record on the scale(which will be the force that the scale imparts on the person), will be the weight of a person. We are asked for this type of weight very frequently. Sometimes this weight is called apparent weight, and it is ubiquitous in cases in which a body is submerged in liquid or is experiencing net acceleration not being entirely caused by gravity(as in the case of a moving elevator). Now let us consider this example of a person standing on a scale in an elevator. Our job is to find the weight recorded on the scale. Now, we will formally introduce the free-body diagram. 
+\begin{tikzpicture}
+\draw[black] (0,0) circle  (0.0001cm);
+\draw[black] (4,0) -- (4,6) ;
+\draw[black] (4,0) -- (8,0) ;
+\draw[black] (8,0) -- (8,6) ;
+\draw[black] (4.5,0) -- (4.5,0.5);
+\draw[black] (7.5,0) -- (7.5,0.5);
+\draw[black] (4.5,0.5) -- (7.5,0.5);
+\draw[black] (4.75,0.5) -- (4.75,2);
+\draw[black] (7.25,0.5) -- (7.25,2);
+\draw[black] (7.25,2) -- (4.75,2);
+\draw[black, ->] (6,2) -- (6, 4);
+\draw[black] (5.75,4.25) node[anchor=west] {$F_N$};
+\draw[black, ->] (6,0.5) -- (6, -1.5);
+\draw[black] (5.75, -1.75) node[anchor=west] {$F_g$};
+\draw[black, ->] (3,6) -- (3,0);
+\draw[black] (2.75,-0.125) node[anchor=west] {$a$};
+\end{tikzpicture}
+\
+\newline
+A free-body diagram is a simple way of diagramming the forces acting on an object. Here we take the box to be the person for simplicity. We have been seing this before but in this section, when a more detailed analysis is required, we will give it a formal name. The force of gravity and the force of the scale on the person are opposing each other and result in the net downwards acceleration. Now that we have identified the forces acting on the person, we can use Newton's laws to determine the force the scale is exerting on the person. We will take the downwards direction as being positive. This means that \begin{equation}ma=mg-F_{Scale}\end{equation} This means that \begin{equation}F_{Scale}=m\left(g-a\right)\end{equation} It is interesting to see from this equation that if the downwards acceleration of the elevator is equal to $g$, then the scale will record the weight of the person as being 0. This is what happens in zero-gravity simulating planes. 

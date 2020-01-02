@@ -1,0 +1,31 @@
+\begin{tikzpicture}
+\draw (0,0) circle(0.0001cm);
+\filldraw (9,0) circle (0.25cm);
+\draw[->] (8.75,0.3) -- (7.75,0.3);
+\draw (8,0.5) node[anchor=west] {$\vec{v}$};
+\draw (9.05,-1) node[anchor=west] {$\vec{r}$};
+\draw (3,0) -- (9,0);
+\draw[dashed] (9,-1.9) -- (9,0);
+\filldraw (9,-2) circle (0.05cm);
+\end{tikzpicture}
+\newline
+\newline
+\newline
+\begin{tikzpicture}
+\draw (0,0) circle (0.0001cm);
+\draw (3,0) -- (9,0);
+\draw[->] (3,0) -- (3,1);
+\filldraw (3,0) circle (0.05cm);
+\filldraw (5,0) circle (0.05cm);
+\filldraw (9,0) circle (0.05cm);
+\filldraw (6,0) circle (0.05cm);
+\draw (6,-0.25) node[anchor=west] {$X_{CM}$};
+\draw (2.75,1.25) node[anchor=west] {$\vec{F_1}$};
+\draw (4.75,0.75) node[anchor=west] {$\vec{F_2}$};
+\draw (8.75,-2.25) node[anchor=west] {$\vec{F_3}$};
+\draw[->] (9,0) -- (9,-2);
+\draw[->] (5,0) -- (5,0.5);
+\end{tikzpicture}
+\newline
+\newline
+Angular momentum is \begin{equation}\vec{L} = \vec{r} \ \times \ \vec{p}\end{equation} This definition seems quite suspicious, and essentially, we only define it this way to make life convenient for us. Of course, we can see from this expression that it varies with how we define $r$. So we have to define the angular momentum of an object relative to a point in space. Frankly, this expression is tough to work with when we have a changing distance from the point to the object. So often times we will only use angular momentum when talking about circular and elliptical orbits. We can also see that if an object is traveling in a straight line relative to a point, the angular momentum will constantly be changing while the linear momentum is not changing. $\vec{p}$ here is the linear momentum of the object. The angular momentum $\vec{r} \times \vec{p}$ is a vector and will be perpendicular to the plane containing the position vector and the momentum of the object. The direction of this quantity is not physically meaningful, but its magnitude is very significant. We learned earlier that when no net force is being applied to an object, then the momentum of the object is constant. There is an analogy of this for rotational motion. When no net torque is being applied to an object relative to a point, the angular momentum of the object is constant relative to the point. We will define torque later, but for now, we will say that when the direction from the point to the object and the net force on the object are parallel, the torque on the object is 0. You can justify this to yourself through an example. If you have a rod with a nail in the midpoint that you can spin, if you try to pull the rod in the direction of the length of the rod, the rod will not spin. You can think about some simple applications of angular momentum where it is just plugging in, but we will discuss the real applications of it later when discussing gravitation. For now, let us imagine that an object is moving with linear velocity $\vec{v}$. Now find the angular momentum of the object relative to a point $d$ meters on top of the object. Assume the object starts moving at $t=0$, find the angular momentum at time $t$. We have that $$\vec{r}= \ \langle vt,d \rangle $$ and $$\vec{p}= \ <mv,0>$$ The magnitude of  $$\vec{r} \times \vec{p}$$ is equal to $$rp\sin\left(\theta \right)$$ where $\theta$ is the angle between $\vec{r}$ and $\vec{p}$. I encourage you to work out the cross product on your own. What you will find is that the angular momentum of the object relative to the point is equal to $$\langle 0,0,-dmv \rangle$$ regardless of the time which has elapsed. This should make sense because if no force is acting an the object, no net torque can act on it either, and therefore the angular momentum of the object must stay the same, nature works! This is exciting. I encourage you to come up with other fun examples of angular momentum as well, think about an object moving on the trajectory of a parabola. 

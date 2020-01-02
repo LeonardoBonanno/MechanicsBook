@@ -1,0 +1,20 @@
+\
+\
+\
+\begin{tikzpicture}
+\draw (0,0) circle (0.0001cm);
+\draw (11,0) arc (30:150:6cm);
+\draw (5.5,3) -- (5.5,5);
+\draw (6.5,3) -- (6.5,5);
+\draw (5.5,5) --  (6,6) -- (6.5,5) -- (5.5,5);
+\draw (5.5,3.5) -- (6.5,3.5);
+\end{tikzpicture}
+\begin{center}
+(Figure 7.2.1)
+\end{center}
+
+We have already derived our formula for gravitational potential energy so now let us apply it to real situations. The first thing we can do is find the total energy of a satellite of mass m that is orbiting the earth at a radius $r$ from the surface. Due to a result that I will not prove known as Newton’s shell theorem, we can consider the gravitational effect of Earth to be the same as if all the mass of the object was concentrated at the center of mass of the Earth. This will work for any object and is a powerful result I challenge you to prove if you know multivariable calculus. 
+We know that the gravitational potential energy is $\frac{-Gm m_e}{r}$. Now, we need to find the potential energy of the satellite. At first, it may not be clear how we are to find this as we have not been given the velocity, but I can calculate it using the fact the centripetal force in this problem is the gravitational force. Using this fact me can say that \begin{equation}\frac{mv^2}{r}=\frac{Gmm_e}{r^2}\end{equation} Therefore \begin{equation}K=\frac{mv^2}{2} = \frac{G m m_e}{2r}\end{equation} Adding this to the potential energy we find that the total energy of the satellite is equal to $$\frac{-G m m_e}{2r}$$ This means that the farther we go away from earth, the closer the potential energy goes to 0. At infinity, the total energy of the satellite will be 0. 
+Using this fact, we can calculate the escape velocity of a ship from earth. This is the velocity that a ship, or any other object for the matter, will need to escape from earth. This may seem complicated, but all we have to do is set the energy that the ship has at the surface equal to the energy that the satellite has at infinity. So we find that \begin{equation}0=\frac{-G m m_e}{r_e}+\frac{mv_{e}^2}{2}\end{equation} where $r_e$ is the radius of the earth. Solving this equation for $v_e$, we find that $$v_e=\sqrt{\frac{2Gme}{r_e}}$$ It is important to understand that even though we call this the escape velocity, a ship does not have to go exactly this speed to be able to escape the gravitational pull of the earth. This is simply the minimum velocity necessary to prevent the object from orbiting around the earth. 
+Now let us think about an object that is orbiting the earth at a radius $r_1$ and something happens and its radius of orbit suddenly changes to $r_2$. We want to find by how much the speed of the object changed. We know that the kinetic energy of the object is equal to $\frac{G m m_e}{2r}$. So, we can solve for the velocity of the object in terms of the radius at which it is orbiting. We find that the velocity is equal to $$\sqrt{\frac{Gmme}{r}}$$ So if the the radius changes from $r_1$ to $r_2$, the velocity changes by $$\sqrt{\frac{G m m_e}{r^2}}-\sqrt{\frac{G m m_e}{r1}}$$ So, if $r_2$ is greater than $r_1$, the velocity has decreased and if $r_2$ is less than $r_1$, the velocity must have increased. This means that the closer the object is to earth, the faster it is orbiting around the earth.
+One thing you might have been thinking is that because of Newton’s third law, the Earth will attract an object orbiting around it, but the object must also attract Earth! This is completely correct. An object orbiting around another object is not orbiting just around the object, it is orbiting around the center of mass of the object-object system. This center of mass is called the barycenter. For a system with the earth and an object of small mass, the center of mass is so close to the center of Earth that any deviation is negligible. However, for star-star systems, this difference is significant. Calculating orbits in these systems can be very complicated, so I will not show you any examples here.

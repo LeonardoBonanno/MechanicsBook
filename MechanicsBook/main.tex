@@ -1,0 +1,83 @@
+% document class
+\documentclass{article}[gray]
+
+%packages
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usepackage{import}
+\usepackage{pgfplots}
+\usepackage{amsmath}
+\usepackage{geometry}
+\geometry{a5paper, margin = 0.5in, footskip = 0.255in}
+\numberwithin{equation}{subsection}
+\usepackage{textcomp}
+\usepackage{rotating}
+\usepackage{esint}
+\pgfplotsset{width=10cm,compat=1.9}
+\setlength{\parindent}{1cm}
+\renewcommand{\baselinestretch}{1.5}
+
+\begin{document}
+
+%title
+\begin{center}
+\
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\newline
+\textbf{\LARGE Leo's Guide to AP Physics C: Mechanics}
+\end{center}
+\begin{center}
+Copyright \textcopyright \ 2019 by Leonardo Bonanno
+\end{center}
+\begin{center}
+\footnotesize ISBN 9781729432624
+\end{center}
+
+%table of contents
+\newpage
+\tableofcontents
+\newpage
+
+% forward
+\section{Forward}
+\import{Sections/Forward/}{forward.tex}
+
+% kinematics
+\section{Kinematics}
+\import{Sections/Kinematics/}{kinematics.tex}
+
+% Newton's Laws
+\section{Newton's Laws and Dynamics}
+\import{Sections/NewtonsLaws/}{newtonslaws.tex}
+
+% Work, Energy, and Power
+\section{Work, Energy, and Power}
+\import{Sections/WorkEnergyPower/}{workenergypower.tex}
+
+% Linear Momentum and Systems Analysis
+\section{Linear Momentum and Systems Analysis}
+\import{Sections/LinearMomentumSystemsAnalysis/}{linearmomentum.tex}
+
+
+% Circular and Rotational Motion
+\section{Circular and Rotational Motion}
+\import{Sections/RotationalMotion/}{rotationalmotion.tex}
+
+% Oscillations and Gravitation
+\section{Oscillations and Gravitation}
+\import{Sections/OscillationsGravitation/}{oscillationsgravitation.tex}
+
+% Conclusion
+\section{Conclusion}
+\import{Sections/Conclusion/}{conclusion.tex}
+
+\end{document}
